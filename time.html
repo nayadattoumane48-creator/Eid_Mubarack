@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+    <script>
+        let counter = 30;
+        let intervalId;
+
+        function count() {
+            counter--;
+            document.querySelector('h1').innerHTML = counter;
+            if (counter == 0) {
+                clearInterval(intervalId);
+                window.location.href = "index.html";
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            setInterval(count, 1000);
+        });
+    </script>
+
+    <style>
+
+        h1 {
+            margin-left: 250px;
+            font-size: 120px;
+            font-weight: bold;
+        }
+
+        body {
+            background: linear-gradient(rgb(64, 255, 0), rgb(0, 217, 255), rgb(34, 1, 253));
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50%;
+            margin-top: 20%;
+            min-height: 50vh;
+        }
+
+        div {
+            font-size: 18px;
+            margin: 0;
+            margin-top: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div><b>Nayad:</b> Patientez dans 30 seconds, s'il vous plait...</div>
+    <h1>30</h1>
+    
+</body>
+</html>
