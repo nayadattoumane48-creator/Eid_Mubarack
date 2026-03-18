@@ -1,0 +1,22 @@
+body {
+    background: white;
+}
+
+p {
+    font-size: larger;
+    font-weight: bold;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60%;
+    border: 1px solid yellow;
+    box-shadow: 0 0 90px yellow;
+    height: 30%;
+    width: 30%;
+    overflow: hidden;
+    margin-top: 10%;
+    margin-left: 30%;
+}
