@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Times New Roman', Times, serif;
+}
+
+body {  
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+p {
+    color:yellow;
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 3rem;
+    text-align: center;
+    transition: 7s;
+    box-shadow: 0 0 20px red;
+}
+
+p:hover {
+    color: springgreen;
+    box-shadow: 0 0 20px orange;
+}
+
+img {
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: column;
+    margin-top: 6rem;
+    margin-left: 1rem;
+    justify-content: center;
+    width: 10rem;
+    height: 12rem;
+    border: 2px solid springgreen;
+    transition: 6s;
+    border-radius: 60%;
+    box-shadow: 0 0 20px springgreen;
+
+}
+
+img:hover {
+    border: blue;
+    box-shadow: 0 0 20px orange;
+}
+
+.bg-ring {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-ring i {
+    position: absolute;
+    inset: 0;
+    border: 2px solid #fff;
+    transition: .5s;
+}
+
+.bg-ring i:nth-child(1) {
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    animation: animate 4s linear infinite;
+}
+
+.bg-ring i:nth-child(2) {
+    border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+    animation: animate 5s linear infinite;
+}
+
+.bg-ring i:nth-child(3) {
+    border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+    animation: animate2 4s linear infinite;
+}
+
+.bg-ring i:nth-child(4) {
+    border-radius: 47% 44% 48% 35% / 48% 41% 52% 54%;
+    animation: animate 3s linear infinite;
+}
+
+.bg-ring:hover i {
+    border: 6px solid var(--clr);
+    filter: drop-shadow(0 0 20px var(--clr));
+}
+
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate2 {
+    0%{
+        transform: rotate(360deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
